@@ -4,11 +4,13 @@ from tkinter import messagebox, simpledialog, Tk
 
 if __name__ == '__main__':
     window=Tk()
-    window.withdraw
+    window.withdraw()
 
-
-    remarkable = simpledialog.askstring(title='Remarkable',prompt="Name someone for a rekarkable fact about them.")
+    remarkable = simpledialog.askstring(title='Remarkable',prompt="Name someone for a remarkable fact about them.")
     if remarkable == 'Ellie':
         messagebox.showinfo(title='Remarkable', message="Ellie loves snatching bread out of people's hands")
-    if remarkable == 'George':
-        messagebox.showinfo(title='Remarkable', message="")
+
+    elif remarkable == 'George':
+        messagebox.showinfo(title='Remarkable', message="George is a business cat who makes our family's money")
+    else:
+        messagebox.showinfo(title='Remarkable', message="I can't tell you something remarkable about this person, but I'm sure they're great!")
