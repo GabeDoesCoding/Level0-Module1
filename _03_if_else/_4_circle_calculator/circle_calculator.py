@@ -5,12 +5,16 @@
 
 #Area = πr^2
 #Circumference = 2πr
+import math
 from tkinter import Tk, messagebox, simpledialog
 window = Tk()
-window.withdraw
+window.withdraw()
 
 
 if __name__ == '__main__':
 
 
-    simpledialog.askstring(title='Circle Calculator', prompt="What is the radius of a circle?")
+    CircRad = simpledialog.askstring(title='Circle Calculator', prompt="What is the radius of a circle?")
+    Choice = simpledialog.askstring(title='Circle Calculator', prompt="Would you like to know the area or the circumference of this circle?")
+    if Choice == 'Area' or Choice == 'area':
+        messagebox.showinfo(title='Area', message="The area of the circle you entered is" + math.pi * CircRad * CircRad)
