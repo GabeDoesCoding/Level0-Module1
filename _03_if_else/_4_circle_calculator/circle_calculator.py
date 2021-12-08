@@ -18,5 +18,6 @@ if __name__ == '__main__':
     Choice = simpledialog.askstring(title='Circle Calculator', prompt="Would you like to know the area or the circumference of this circle?")
     if Choice == 'Area' or Choice == 'area':
         messagebox.showinfo(title='Area', message="The area of the circle you entered is " +str(math.pi * (CircRad * CircRad)))
+
     elif Choice == 'Circumference' or Choice == 'circumference':
         messagebox.showinfo(title='Circumference', message="The circumference of the circle you entered is " +str(CircRad*2*math.pi))
