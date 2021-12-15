@@ -13,5 +13,14 @@ if __name__ == '__main__':
     # Ask the user what shape they want to draw and store it in a variable
     Shape = simpledialog.askstring(title='Shape',prompt="What shape do you want to draw?")
     # Draw the shape requested by the user using if-elif-else statements
-    
+    if Shape == 'Square' or Shape == 'square':
+        for i in range(4):
+            Joe.forward(360)
+            Joe.right(90)
+    elif Shape == 'Triangle' or Shape == 'triangle':
+        for i in range(3):
+            Joe.forward(360)
+            Joe.right(120)
+    elif Shape == 'Circle' or Shape == 'circle':
+
     # Call the turtle .done() method
