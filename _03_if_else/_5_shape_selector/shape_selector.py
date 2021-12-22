@@ -22,5 +22,7 @@ if __name__ == '__main__':
             Joe.forward(360)
             Joe.right(120)
     elif Shape == 'Circle' or Shape == 'circle':
+        Joe.circle(180)
 
     # Call the turtle .done() method
+    turtle.done
