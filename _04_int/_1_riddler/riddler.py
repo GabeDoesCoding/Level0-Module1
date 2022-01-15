@@ -18,5 +18,6 @@ if __name__ == '__main__':
     Q1 = simpledialog.askstring(title='Question 1',prompt="David's father has 3 sons. Snap, Crackle and _____. What is the third son's name?")
     if Q1 == 'David' or Q1 == 'david':
         A + 1
-    simpledialog.askstring(title='Question 2', prompt= "You walk into a cabin and it is pitch black. There is a lantern, a candle and a fireplace. You only have one match. Which do you light first?")
-    if
+    Q2 = simpledialog.askstring(title='Question 2', prompt= "You walk into a cabin and it is pitch black. There is a lantern, a candle and a fireplace. You only have one match. Which do you light first? Answer starts with The, and words are capitalized")
+    if Q2 == "The Match":
+        A + 1
