@@ -11,4 +11,8 @@ if __name__ == '__main__':
     window = Tk()
     window.withdraw()
     Calculate = simpledialog.askinteger(title="Simple calculator",prompt="Which calculator function would you like to use? Type 1 for addition, 2 for subtraction, 3 for multiplication and 4 for division.")
-    if Calculate == "1":
+    if Calculate == 1:
+        AddNum1 = simpledialog.askinteger(title='Simple Adder', prompt="Enter in the first number you want to add")
+        AddNum2 = simpledialog.askinteger(title='Simple Adder', prompt="Enter in the second number you want to add")
+        Ans = AddNum1 + AddNum2
+        messagebox.showinfo(title='Simple Adder', message="The answer is "+ str(Ans) +"!")
