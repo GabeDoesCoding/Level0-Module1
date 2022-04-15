@@ -9,8 +9,8 @@
      how to vary the text and the positioning so that you can read all four
      separate lines.
 """
-
-from tkinter import *
+if __name__ == '__main__':
+    from tkinter import *
 import tkinter as tk
 
 root = tk.Tk()
@@ -24,6 +24,9 @@ Text Rendering Example:
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 # Put your code below
-
+window = Tk()
+window.withdraw()
+for i in range(3):
+    canvas.create_text(100, 50, text="Ice Cream, Ice Cream, Ice Cream", font=("Arial", 16))
 
 root.mainloop()
