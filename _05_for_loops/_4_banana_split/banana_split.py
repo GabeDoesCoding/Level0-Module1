@@ -27,6 +27,7 @@ canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 window = Tk()
 window.withdraw()
 for i in range(3):
-    canvas.create_text(100, 50, text="Ice Cream, Ice Cream, Ice Cream", font=("Arial", 16))
+    canvas.create_text(100, 50, text="Ice Cream " "Ice Cream " "Ice Cream", font=("Arial", 16))
+
 
 root.mainloop()
